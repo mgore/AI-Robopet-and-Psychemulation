@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" rx="128" fill="#1c1917"/>
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="none" stroke="#f59e0b" stroke-width="12" stroke-opacity="0.4"/>
+  <!-- Industrial Gear & Hardware Tracks -->
+  <path d="M120 256 L200 256 L256 200 L256 120" fill="none" stroke="#f59e0b" stroke-width="16" stroke-linecap="round"/>
+  <path d="M392 256 L312 256 L256 312 L256 392" fill="none" stroke="#d97706" stroke-width="16" stroke-linecap="round"/>
+  <!-- Central Gear Core -->
+  <circle cx="256" cy="256" r="80" fill="#292524" stroke="#f59e0b" stroke-width="12"/>
+  <circle cx="256" cy="256" r="32" fill="#f59e0b"/>
+  <!-- Gear Teeth -->
+  <rect x="240" y="152" width="32" height="24" rx="4" fill="#f59e0b"/>
+  <rect x="240" y="336" width="32" height="24" rx="4" fill="#f59e0b"/>
+  <rect x="152" y="240" width="24" height="32" rx="4" fill="#f59e0b"/>
+  <rect x="336" y="240" width="24" height="32" rx="4" fill="#f59e0b"/>
+</svg>

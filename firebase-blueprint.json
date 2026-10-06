@@ -1,0 +1,103 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profile and Hardware Selection",
+      "description": "Stores user basic information, screen name, and selected robot hardware drawer configuration.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "name": { "type": "string" },
+        "screenName": { "type": "string" },
+        "email": { "type": "string" },
+        "selectedDrawer": {
+          "type": "array"
+        },
+        "contingencyDrawer": {
+          "type": "array"
+        },
+        "robotType": { "type": "string" },
+        "customGoal": { "type": "string" },
+        "budget": { "type": "number" },
+        "budgetMargin": { "type": "number" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["uid"]
+    },
+    "communityPosts": {
+      "title": "Community Shared Post",
+      "description": "Shared maker designs, photos, build logs, and spare inventory items for communal exchange.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "authorUid": { "type": "string" },
+        "authorName": { "type": "string" },
+        "authorScreenName": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string", "enum": ["photo", "design", "inventory", "discussion"] },
+        "description": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "authorUid", "title", "category"]
+    },
+    "hardwareCatalog": {
+      "title": "Hardware Catalog Item",
+      "description": "Managed hardware components with live supplier metadata, specs, pin requirements, and versions.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "estimatedPriceUSD": { "type": "number" },
+        "voltage": { "type": "string" },
+        "specs": { "type": "string" },
+        "roleInProject": { "type": "string" },
+        "version": { "type": "string" },
+        "inStock": { "type": "boolean" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "name", "category", "estimatedPriceUSD"]
+    },
+    "showcaseProjects": {
+      "title": "Published Showcase Project",
+      "description": "Durable community robotics projects published by makers with hardware lists, comments, and likes.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "builder": { "type": "string" },
+        "authorUid": { "type": "string" },
+        "description": { "type": "string" },
+        "hardware": { "type": "array" },
+        "llmSpec": { "type": "string" },
+        "image": { "type": "string" },
+        "workTimeDays": { "type": "number" },
+        "totalCost": { "type": "number" },
+        "likes": { "type": "number" },
+        "likedBy": { "type": "array" },
+        "comments": { "type": "array" },
+        "version": { "type": "string" },
+        "publishedAt": { "type": "string" }
+      },
+      "required": ["id", "title", "builder", "authorUid", "hardware"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "#/entities/users",
+      "description": "User profile document storing current robot configuration and hardware list"
+    },
+    "/communityPosts/{postId}": {
+      "schema": "#/entities/communityPosts",
+      "description": "Public communal posts including build photos, 3D CAD design files, and spare inventory listings"
+    },
+    "/hardwareCatalog/{itemId}": {
+      "schema": "#/entities/hardwareCatalog",
+      "description": "Managed global robotics hardware catalog with supplier pricing and specs"
+    },
+    "/showcaseProjects/{projectId}": {
+      "schema": "#/entities/showcaseProjects",
+      "description": "Community published robotics projects with durable collaboration and moderation metadata"
+    }
+  }
+}

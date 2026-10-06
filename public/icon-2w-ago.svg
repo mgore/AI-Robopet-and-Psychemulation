@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <rect width="512" height="512" rx="128" fill="#1e1b4b"/>
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="none" stroke="#a855f7" stroke-width="12" stroke-opacity="0.4"/>
+  <!-- Cybernetic Neural Paths -->
+  <path d="M140 140 L220 220 L256 220 L300 176 L372 176" fill="none" stroke="#a855f7" stroke-width="14" stroke-linecap="round"/>
+  <path d="M140 372 L220 292 L256 292 L300 336 L372 336" fill="none" stroke="#ec4899" stroke-width="14" stroke-linecap="round"/>
+  <!-- Central Neural Core -->
+  <polygon points="256,176 336,256 256,336 176,256" fill="#311042" stroke="#a855f7" stroke-width="12"/>
+  <circle cx="256" cy="256" r="32" fill="#ec4899"/>
+  <!-- Node Dots -->
+  <circle cx="140" cy="140" r="12" fill="#a855f7"/>
+  <circle cx="372" cy="176" r="12" fill="#a855f7"/>
+  <circle cx="140" cy="372" r="12" fill="#ec4899"/>
+  <circle cx="372" cy="336" r="12" fill="#ec4899"/>
+</svg>

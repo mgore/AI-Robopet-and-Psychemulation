@@ -1,0 +1,8 @@
+{
+  "name": "AI RoboPet",
+  "description": "An all-in-one companion for DIY robotics and autonomous robo-pets. Sourcing engine, environment setup wizard, compatibility checker, and LLM integration playground.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

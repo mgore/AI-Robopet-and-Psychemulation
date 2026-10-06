@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest.json",
+  "id": "AI-RoboPet-alphabot-v.1",
+  "name": "AI RoboPet - Hardware Sourcing & Robotics Workbench",
+  "short_name": "AI RoboPet",
+  "description": "An all-in-one companion for DIY robotics and autonomous robo-pets: component sourcing engine, environment setup wizard, compatibility checker, and GPIO wiring workbench.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1e1b4b",
+  "theme_color": "#a855f7",
+  "categories": [
+    "utilities",
+    "education",
+    "productivity",
+    "developer"
+  ],
+  "lang": "en-US",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
