@@ -26,7 +26,7 @@ ARG VITE_FIREBASE_RECAPTCHA_SITE_KEY=""
 RUN bun run build
 
 # ---- runtime ----
-FROM node:22-slim AS runtime
+FROM node:26-slim AS runtime
 WORKDIR /app
 ENV NODE_ENV=production
 COPY --from=deps --chown=node:node /app/node_modules ./node_modules
